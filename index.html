@@ -7,14 +7,34 @@
 			margin:0;
 		}
 		header{
-			display:flex;
-			justify-content:space-around;
-			text-align:center;
-			align-content:center;
-			align-items:center;
+			
 			margin-bottom:20px;
 			background:#EEEEEE; /*or #EEE for grey*/
 			padding:20px;
+		}
+		.navigation{
+			display:flex;
+			justify-content:space-between;
+			text-align:center;
+			align-content:center;
+			align-items:center;
+		}
+		.navigation__list{
+			list-style-type: none;
+		}
+		.navigation__list li{
+			display:inline-block;
+			padding:0 15px;
+		}
+		.navigation__list a{
+			color:#3A4FA3;  /*blue*/
+			text-decoration:none; /*for the underlyning*/
+			transition: 1s all ease;
+		}
+		.navigation__list a:hover{
+			letter-spacing: 1.1px;
+			color:#F0000;
+
 		}
 		a{
 			font-size:20px;
@@ -43,40 +63,262 @@
 </head>
 <body>
 	<header>
-		<a>HOME</a>
-		<a>about</a>
-		<a>projects</a>
-		<a>Photos</a>
+		<nav class="navigation">
+			<!-- left side of the nav -->
+			<div class="navigation__left">
+				<img src="https://app.evrybo.com/public/assets/logo-l.png"/>
+			</div>
+			<!-- right side of the nav -->
+			<div class="navigation__right">
+				<!-- An unordered list here -->
+				<ul class="navigation__list">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Projects</a>
+					</li>
+					<li>
+						<a href="#">Photos</a>
+					</li>
+				</ul>
+			</div>
+		</nav>	
 	</header>
 	<main>
-		<h1>First Heading</h1>
+		<section>
+			<h1>First Heading</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		
+		</section>
+		<section>
+			<h1>Second Heading</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	    </section>
+	    <!-- section for third paragraph -->
+	    <section>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<h1>Second Heading</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<h1>Third Heading</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h1>Third Heading</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	    </section>
+
+		<!-- list items -->
+		<section>
+				<ul>
+					<li>Food
+						<ul contenteditable="true">
+							<li>Amala skye</li>
+							<li>Indomie and fried egg</li>
+							<li>Fried rice and chicken</li>
+						</ul>
+					</li>
+					<li>Music
+						<ul>
+						<li>R & B</li>
+						<li>Hip pop</li>
+						<li>Soul</li>
+					</ul>
+					</li>
+					<li>Sport
+						<ul>
+							<li>Football</li>
+							<li>swimming</li>
+							<li>Tennis</li>
+						</ul>
+					</li>
+				</ul>
+				<ol >
+					<li>Hobbies
+						<ol type="i">
+							<li>Music</li>
+							<li>Touring</li>
+							<li>Swimming</li>
+						</ol>
+					</li>
+					<li>Places
+						<ol type="i">
+							<li>Kogi</li>
+							<li>Abuja</li>
+							<li>Germany</li>
+						</ol>
+					</li>
+					<li>Careers
+						<ol type="i">
+							<li>IT</li>
+							<li>Accounting</li>
+							<li>Photography</li>
+						</ol>
+					</li>
+				</ol>
+				
+				<ol>
+					<li>Food
+						<ol type="A">
+							<li>Rice
+								<ul>
+									<li>White rice</li>
+									<li>Fried rice</li>
+									<li>Jollof rice</li>
+								</ul>
+							</li>
+							<li>Beans
+								<ul>
+									<li>ewa ganyi</li>
+									<li>beans with palmoil</li>
+									<li>white beans with stew</li>
+								</ul>
+							</li>
+							<li>Noodles
+								<ul>
+									<li>Indomie</li>
+									<li>Golden Penny</li>
+									<li>Dangote</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+					<li>Drinks
+						<ol type="A">
+							<li>Alcoholic
+								<ul>
+									<li>Gulder</li>
+									<li>Origin</li>
+									<li>333</li>
+								</ul>
+							</li>
+							<li>Soft Drinks
+								<ul>
+									<li>fanta</li>
+									<li>Mirinda</li>
+									<li>Pepsi</li>
+								</ul>
+							</li>
+							<li>Beverage
+								<ul>
+									<li>Lipton</li>
+									<li>Milo</li>
+									<li>Ovaltine</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+					<li>Cars
+						<ol type="A">
+							<li>Fast cars
+
+								<ul>
+									<li>Lambourghini</li>
+									<li>Sport cars</li>
+									<li>Rolls Royce</li>
+
+								</ul>
+							</li>
+							<li>Normal
+								<ul>
+									<li>hyundai</li>
+									<li>Toyota</li>
+									<li>SUV</li>
+								</ul>
+							</li>
+							<li>Others
+								<ul>
+									<li>Mitsubishi</li>
+									<li>Volks Wagen</li>
+									<li>Mercedes</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+
+					<li>Clothes
+						<ol type="A">
+							<li>Men's
+								<ul>
+									<li>Trouser</li>
+									<li>Shirts</li>
+									<li>Jackets</li>
+								</ul>
+							</li>
+							<li>Women's
+								<ul>
+									<li>Tops</li>
+									<li>Skirts</li>
+									<li>Blazers</li>
+								</ul>
+							</li>
+								
+							<li>Children's
+								<ul>
+									<li>Shorts</li>
+									<li>Gowns</li>
+									<li>Blouses</li>
+								</ul>
+							</li>
+						</ol>
+						
+					</li>
+					<li>Furniture
+						<ol type="A">
+							<li>Office
+								<ul>
+									<li>Tables</li>
+									<li>Chairs</li>
+									<li>Shelves</li>
+								</ul>
+							</li>
+							<li>Home
+								<ul>
+									<li>Dinning table</li>
+									<li>Lamp table</li>
+									<li>Kitchen table</li>
+								</ul>
+							</li>
+							<li>School
+								<ul>
+									<li>Lockers</li>
+									<li>Desks</li>
+									<li>Chairs</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+				</ol>
+
+				<dl>
+					<dt>River</dt>
+					<dd>A river is a body of water</dd>
+					<dt>Computer</dt>
+					<dd>A computer is a device...</dd>
+				</dl>
+	    </section>
+	    <!-- section for inputs -->
+	    <section>
+	    	<input type="tel" name="email" placeholder="type in your password" value="submit"/>
+	    </section>
+			
 	</main>
 	<footer>
 		<a>Privacy</a>
 		<a>Terms and conditions</a>
-		<a>copyright 2018</a>
+		<a>&copy; 2018</a>
 	</footer>
 </body>
 </html>
